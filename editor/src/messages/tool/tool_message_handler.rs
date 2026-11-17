@@ -1,6 +1,11 @@
 use super::common_functionality::shape_editor::ShapeState;
 use super::common_functionality::shapes::shape_utility::ShapeType::{Ellipse, Line, Rectangle};
 use super::common_functionality::snap_session::SnapSession;
+use super::tool_messages::freehand_tool::FreehandOptionsUpdate;
+use super::tool_messages::pen_tool::PenOptionsUpdate;
+use super::tool_messages::select_tool::SelectOptionsUpdate;
+use super::tool_messages::shape_tool::ShapeOptionsUpdate;
+use super::tool_messages::spline_tool::SplineOptionsUpdate;
 use super::utility_types::{ToolActionMessageContext, ToolFsmState, tool_message_to_tool_type};
 use crate::application::generate_uuid;
 use crate::messages::layout::utility_types::widget_prelude::*;
